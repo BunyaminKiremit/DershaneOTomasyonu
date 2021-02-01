@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4FB661F-B38B-4766-B13E-68E6E88EF68B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DersHaneOTM</RootNamespace>
+    <AssemblyName>DersHaneOTM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArkaPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArkaPlan.Designer.cs">
+      <DependentUpon>ArkaPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneLoginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneLoginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneLoginDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneLoginDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneLoginDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneLoginDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneLoginDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneLoginDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkranı.Designer.cs">
+      <DependentUpon>GirisEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkle.Designer.cs">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGuncelle.Designer.cs">
+      <DependentUpon>KullaniciGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciSilcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSilcs.Designer.cs">
+      <DependentUpon>KullaniciSilcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkle.Designer.cs">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciGüncelle.Designer.cs">
+      <DependentUpon>OgrenciGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListe.Designer.cs">
+      <DependentUpon>OgrenciListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciSil.Designer.cs">
+      <DependentUpon>OgrenciSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGuncelle.Designer.cs">
+      <DependentUpon>PersonelGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelListe.Designer.cs">
+      <DependentUpon>PersonelListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelSil.Designer.cs">
+      <DependentUpon>PersonelSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinav.Designer.cs">
+      <DependentUpon>Sinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinavListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinavListe.Designer.cs">
+      <DependentUpon>SinavListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veli.Designer.cs">
+      <DependentUpon>Veli.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArkaPlan.resx">
+      <DependentUpon>ArkaPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkranı.resx">
+      <DependentUpon>GirisEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkle.resx">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGuncelle.resx">
+      <DependentUpon>KullaniciGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSilcs.resx">
+      <DependentUpon>KullaniciSilcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEkle.resx">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciGüncelle.resx">
+      <DependentUpon>OgrenciGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListe.resx">
+      <DependentUpon>OgrenciListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciSil.resx">
+      <DependentUpon>OgrenciSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGuncelle.resx">
+      <DependentUpon>PersonelGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelListe.resx">
+      <DependentUpon>PersonelListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelSil.resx">
+      <DependentUpon>PersonelSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sinav.resx">
+      <DependentUpon>Sinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinavListe.resx">
+      <DependentUpon>SinavListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veli.resx">
+      <DependentUpon>Veli.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DershaneLoginDataSet.xsc">
+      <DependentUpon>DershaneLoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneLoginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneLoginDataSet.xss">
+      <DependentUpon>DershaneLoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet1.xsc">
+      <DependentUpon>DershaneLoginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneLoginDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneLoginDataSet1.xss">
+      <DependentUpon>DershaneLoginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet2.xsc">
+      <DependentUpon>DershaneLoginDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneLoginDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneLoginDataSet2.xss">
+      <DependentUpon>DershaneLoginDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet3.xsc">
+      <DependentUpon>DershaneLoginDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneLoginDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneLoginDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneLoginDataSet3.xss">
+      <DependentUpon>DershaneLoginDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_KpreBlzLSEzi8YatrXPQfA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1097639.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

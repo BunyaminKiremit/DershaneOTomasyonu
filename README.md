@@ -1,2 +1,0 @@
-# DershaneOTomasyonu
-ders
